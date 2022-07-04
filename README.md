@@ -1,3 +1,4 @@
+![workout-buddy-snapshot](https://github.com/jdhawks2132/mern-stack/blob/main/Workout%20Buddy.png)
 # Workout Buddy
 
 ## Workout Tracker built in MERN Stack
