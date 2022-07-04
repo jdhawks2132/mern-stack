@@ -2,6 +2,12 @@
 
 ## Workout Tracker built in MERN Stack
 
+
+## Purpose
+
+Currently learning the MERN stack and wanted to develop a FullStack application using those tools. However
+
+## Project Planning
 ### Backend 
 
 Backend is built in Node.js and Express.js.
@@ -30,11 +36,18 @@ npm start
 
 ### User Stories
 
-User can view a list of workouts
-User can add new workouts to the list
-User can delete workouts from the list
+  - Users can:
+    - view a list of workouts
+    - add new workouts to the list
+    - delete workouts from the list
 
 ### Future Features
 
-Plans to add a user layer for authentication
-Users can have personalized workout tracking
+  - Users can:
+    - create a login
+    - log in to the app
+    - log out of the app
+    - view personalized workout information
+
+  - Deployment
+    - Deploy to Heroku or other cloud based hosting
