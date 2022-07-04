@@ -30,9 +30,9 @@ npm start
 
 ### User Stories
 
--User can view a list of workouts
--User can add new workouts to the list
--User can delete workouts from the list
+User can view a list of workouts
+User can add new workouts to the list
+User can delete workouts from the list
 
 ### Future Features
 
