@@ -4,9 +4,10 @@ import { useWorkoutsContext } from '../hooks/useWorkoutsContext';
 import formatDistanceToNow from 'date-fns/formatDistanceToNow';
 
 const WorkoutDetails = ({ workout }) => {
+	const BASE_URL = 'https://mern-workout-app.herokuapp.com/api/workouts';
 	const { dispatch } = useWorkoutsContext();
 	const handleClick = async () => {
-		const res = await fetch(`/api/workouts/${workout._id}`, {
+		const res = await fetch(`${BASE_URL}/${workout._id}`, {
 			method: 'DELETE',
 		});
 		const data = await res.json();

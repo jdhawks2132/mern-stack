@@ -1,5 +1,4 @@
 {
-  "proxy": "https://mern-workout-app.herokuapp.com",
   "name": "frontend",
   "version": "0.1.0",
   "private": true,

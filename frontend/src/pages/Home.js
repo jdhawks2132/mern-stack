@@ -5,10 +5,11 @@ import WorkoutForm from '../components/WorkoutForm';
 
 const Home = () => {
 	const { workouts, dispatch } = useWorkoutsContext();
+	const BASE_URL = 'https://mern-workout-app.herokuapp.com/api/workouts';
 
 	useEffect(() => {
 		const fetchWorkouts = async () => {
-			const res = await fetch('/api/workouts');
+			const res = await fetch(BASE_URL);
 			const data = await res.json();
 			if (res.ok) {
 				dispatch({ type: 'SET_WORKOUTS', payload: data });
@@ -17,7 +18,9 @@ const Home = () => {
 		fetchWorkouts();
 	}, [dispatch]);
 
-	const workoutList = workouts?.map((workout) => <WorkoutDetails key={workout._id} workout={workout} />);
+	const workoutList = workouts?.map((workout) => (
+		<WorkoutDetails key={workout._id} workout={workout} />
+	));
 
 	return (
 		<div className='home'>

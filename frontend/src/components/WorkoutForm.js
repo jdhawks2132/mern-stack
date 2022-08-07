@@ -3,7 +3,7 @@ import { useWorkoutsContext } from '../hooks/useWorkoutsContext';
 
 const WorkoutForm = () => {
 	const { dispatch } = useWorkoutsContext();
-
+	const BASE_URL = 'https://mern-workout-app.herokuapp.com/api/workouts';
 	const [title, setTitle] = useState('');
 	const [weight, setWeight] = useState('');
 	const [sets, setSets] = useState('');
@@ -21,7 +21,7 @@ const WorkoutForm = () => {
 			reps,
 		};
 
-		const response = await fetch('/api/workouts', {
+		const response = await fetch(`${BASE_URL}`, {
 			method: 'POST',
 			body: JSON.stringify(workout),
 			headers: {
